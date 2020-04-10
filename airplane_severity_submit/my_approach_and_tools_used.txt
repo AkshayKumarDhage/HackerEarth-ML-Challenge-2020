@@ -1,0 +1,42 @@
+**********************HackerEarth Machine Learning challenge:Calculate the severity of an airplane accident.**********************
+
+************** MY APPROACH FOR THE PROBLEM STATEMENT **************
+
+1.In the given dataset 'Severity' column is the target variable which we need to predict.
+	Severity of plane crash can take any of the 4 classes.
+	Hence, this problem statement is a classification problem.
+
+2.Exploring the given train dataset and visualising using graph plots.
+
+3.For preprocessing,
+	 i.we look for NaN or missing values and handle them is any values are missing.
+	ii.Then if any multiple data types present in same column.
+	iii. Handling String values.
+
+	In the given dataset there were *No Missing values*.
+
+	"Severity" column had string values representing the classes. 
+	Hence we assign dummy numerical value to each of the classes here 0-3 respectively for 4 classes.
+
+4.Then in Feature Engineering,
+	we apply preprocessing or Standard Scalar to the data before training the Machine Learning Model.
+
+5.Machine Learning Algorithm,
+	Since this is a classification problem, we have number of classification algorithms like Support Vector Machine, KNN etc.
+	Here I used Support Vector Classifier for training and predictions.
+
+6.Then we evaluate the classifier model with train set using Accuracy_score and f1_score.
+
+
+***********TOOLS Used:***************
+Python3
+Jupyter Notebook (.ipynb)
+
+libraries used:
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Sklearn
+
+************END*************
